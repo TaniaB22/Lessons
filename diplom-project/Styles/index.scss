@@ -1,0 +1,31 @@
+
+@import'../Styles/variables.scss';
+
+.home-page-main-wrapper{
+    position: relative;
+    margin-top: -116px;
+    z-index: 0;
+    height: 799px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .main-bg-image{
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 100%;
+        z-index: -1;
+    }
+    .main-title{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: $bold;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: $basic-white;
+    }
+}
