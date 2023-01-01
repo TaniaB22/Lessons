@@ -95,6 +95,7 @@ P{
 
 .credient-supersoft{
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
 }
 
 .wrapper{
@@ -155,11 +156,13 @@ P{
             }
         }
         .bottom-box{
+            z-index: 1;
             .navigation-list{
                 display: flex;
                 justify-content: end;
                 margin-top: 16px;
                 gap: 15px;
+              
             
                 .navigation a{
                     text-decoration: none;
@@ -171,11 +174,22 @@ P{
                     font-size: 16px;
                     line-height: 20px;
                     color: $basic-white;
-                   }   
+                    &:hover{
+                        text-decoration: underline;
+                        text-underline-offset:3px;
+                        
+                    }
+                    &:active{
+                        text-decoration: underline;
+                        text-underline-offset:3px;
+                        color: $accent;
+                        
+
+                    }
+                }   
             }
 
         }
             
-
     }
 }
